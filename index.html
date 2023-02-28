@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+Pro&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet" href="./dist/style.css">
+   <link rel="shortcut icon" href="./images/icon/logo.svg" type="image/x-icon">
+   <title>Portfolio</title>
+</head>
+
+<body>
+   <main class="container">
+      <div class="bg__img">
+         <!-- <img class="bg__desktop" src="./images/backgroung Image desktop.jpg" alt="code on laptop screen"> -->
+      </div>
+      <header class="header">
+         <img src="./images/icon/logo.svg" alt="logo">
+         <nav class="nav__links__container">
+            <a class="nav__link" href="#presentation">Acceuil</a>
+            <a class="nav__link" href="#about__me">A Propos</a>
+            <a class="nav__link" href="#projects">Mes Realisations</a>
+            <a class="nav__link" href="#contact">Contactez-moi</a>
+         </nav>
+      </header>
+      <section class="presentation" id="presentation">
+         <article class="nom">
+            <h1>Salut 👋🏿, <br> Moi c'est Mamadou <br> Abdourhamane Maiga</h1>
+            <!-- <p>Un developpeur front-end junior</p> -->
+            <aside>
+               <a class="btn__about" href="#about__me">A propos de moi</a>
+            </aside>
+         </article>
+      </section>
+      <section class="about__me" id="about__me">
+         <article class="profile__container">
+            <div class="profile__img">
+               <img src="./images/profiles Images.jpg" alt="profiles images">
+            </div>
+            <p class="profile__text">
+               Je reside en afrique de l'ouest au Mali. Je sais construire des sites web fonctionnels et proche du
+               design original. J'ai commencé le developpement web il y a peu près 1 ans. Durant ce temps j'ai appris à écrire
+               du HTML5 accessible, du CSS3
+               moderne et du JavaScript propre. J'aime apprendre de nouvelle chose chaque jour, c'est ce qui m'a poussé
+               dans ce domaine fabuleux qu'est le
+               developpement web.
+            </p>
+            <a class="profile__btn" href="#contact">Contactez-moi</a>
+         </article>
+
+         <article class="skills__container">
+            <h2>Mes Compétences</h2>
+            <aside class="skills skill__html">
+               <label for="html"><img class="html" src="./images/icon/html5.svg" alt=""></label>
+               <input type="range" name="" id="html" min="0" max="100" value="80" oninput="rangevalueHTML.value=value">
+               <div class="output__container">
+                  <output id="rangevalueHTML">80</output><span>%</span>
+               </div>
+            </aside>
+            <aside class="skills skill__css">
+               <label for="css"><img class="css" src="./images/icon/css3.svg" alt=""></label>
+               <input type="range" name="" id="css" min="0" max="100" value="80" oninput="rangevalueCSS.value=value">
+               <div class="output__container">
+                  <output id="rangevalueCSS">80</output><span>%</span>
+               </div>
+            </aside>
+            <aside class="skills skill__javascript">
+               <label for="javascript"><img class="javascript" src="./images/icon/javascript.svg" alt=""></label>
+               <input type="range" name="" id="javascript" min="0" max="100" value="65"
+                  oninput="rangevalueJavaScript.value=value">
+               <div class="output__container">
+                  <output id="rangevalueJavaScript">65</output><span>%</span>
+               </div>
+            </aside>
+            <aside class="skills skill__sass">
+               <label for="sass"><img class="sass" src="./images/icon/sass.svg" alt=""></label>
+               <input type="range" name="" id="sass" min="0" max="100" value="70" oninput="rangevalueSass.value=value">
+               <div class="output__container">
+                  <output id="rangevalueSass">70</output><span>%</span>
+               </div>
+            </aside>
+            <aside class="skills skill__tailwindcss">
+               <label for="tailwindcss"><img class="tailwindcss" src="./images/icon/tailwindcss.svg" alt=""></label>
+               <input type="range" name="" id="tailwindcss" min="0" max="100" value="10"
+                  oninput="rangevalueTailwindCss.value=value">
+               <div class="output__container">
+                  <output id="rangevalueTailwindCss">10</output><span>%</span>
+               </div>
+            </aside>
+            <aside class="skills skill__react">
+               <label for="react"><img class="react" src="./images/icon/react.svg" alt=""></label>
+               <input type="range" name="" id="react" min="0" max="100" value="5" oninput="rangevalueReact.value=value">
+               <div class="output__container">
+                  <output id="rangevalueReact">5</output><span>%</span>
+               </div>
+            </aside>
+            <a class="projects__btn" href="#projects">Mes réalisations</a>
+         </article>
+      </section>
+      <section id="projects">
+         <h2>Mes Réalisations</h2>
+         <section class="projects__container">
+            <article class="projects__card project__one">
+               <img src="./images/tpCommit1.png" alt="">
+               <p>
+                  Un projet uniquement en HTML pour appliquer mes connaissance en HTML.
+               </p>
+               <aside class="project__link">
+                  <a href="" class="website__link" target="_blank">Voir le Site</a>
+                  <a href="https://github.com/M2AML/tpcommit1" class="website__link" target="_blank">Lien GitHub <img
+                        class="github__icon" src="./images/icon/github.svg" /></a>
+               </aside>
+            </article>
+            <article class="projects__card project__two">
+               <img src="./images/tpCommit2.png" alt="">
+               <p>
+                  Un site web avec de multiples pages en HTML CSS. Ça ma permis de savoir structurer un site contenant
+                  de multiple fichers. Crée une cohérence entre les differents partis du site.
+               </p>
+               <aside class="project__link">
+                  <a href="" class="website__link" target="_blank">Voir le Site</a>
+                  <a href="https://github.com/M2AML/tpcommit2" class="website__link" target="_blank">Lien GitHub <img
+                        class="github__icon" src="./images/icon/github.svg" /></a>
+               </aside>
+            </article>
+            <article class="projects__card project__three">
+               <img src="./images/tpCommit3.png" alt="">
+               <p>
+                  Un diapo d'images pour maitrisez les concepts de base en JavaScript.
+               </p>
+               <aside class="project__link">
+                  <a href="" class="website__link" target="_blank">Voir le Site</a>
+                  <a href="https://github.com/M2AML/tpcommit3" class="website__link" target="_blank">Lien GitHub <img
+                        class="github__icon" src="./images/icon/github.svg" /></a>
+               </aside>
+            </article>
+            <article class="projects__card project__four">
+               <img src="./images/project1 Images.jpg" alt="">
+               <p>
+                  Un landing page responsive pour apprendre a crée des sites adaptables a tout les ecrans. Et aussi un
+                  menu pour les petites écrans.
+               </p>
+               <aside class="project__link">
+                  <a href="https://intro-section-with-dropdown-navigation-main-wine.vercel.app" class="website__link" target="_blank">Voir le Site</a>
+                  <a href="https://github.com/M2AML/intro-section-with-dropdown-navigation-main" class="website__link"
+                     target="_blank">Lien GitHub <img class="github__icon" src="./images/icon/github.svg" /></a>
+               </aside>
+            </article>
+            <article class="projects__card project__five">
+               <img src="./images/project2 images.jpg" alt="">
+               <p>
+                  Un project qui m'a permis de maitriser le CSS et entrainé mes yeux pour pouvoir réproduire a
+                  l'identique un site proche du design original.
+               </p>
+               <aside class="project__link">
+                  <a href="https://huddle-landing-page-silk-five.vercel.app" class="website__link" target="_blank">Voir le Site</a>
+                  <a href="https://github.com/M2AML/huddle-landing-page" class="website__link" target="_blank">Lien
+                     GitHub <img class="github__icon" src="./images/icon/github.svg" /></a>
+               </aside>
+            </article>
+            </article>
+            <article class="projects__card project__six">
+               <img src="./images/project3 Images.jpg" alt="">
+               <p>
+                  Ce projet m'a aidé à maitriser les concepts de grid. Concept très utile dans le milieu.
+               </p>
+               <aside class="project__link">
+                  <a href="https://loopstudios-landing-page-main-sand.vercel.app/" class="website__link" target="_blank">Voir le Site</a>
+                  <a href="https://github.com/M2AML/loopstudios-landing-page-main" class="website__link"
+                     target="_blank">Lien GitHub <img class="github__icon" src="./images/icon/github.svg" /></a>
+               </aside>
+            </article>
+         </section>
+      </section>
+      <section id="contact">
+         <h2>Contactez-moi</h2>
+         <article class="location__contact">
+            <iframe
+               src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d9606336.993951578!2d-3.5080627753876876!3d16.168029158812033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sml!4v1655808293728!5m2!1sfr!2sml"
+               width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+               referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <article class="contact">
+               <form>
+                  <input type="text" name="" id="" placeholder="Votre nom">
+                  <input type="email" name="email" id="email" placeholder="Votre email" required>
+                  <textarea name="" id="" cols="50" rows="5"
+                     placeholder="Une petite description de votre projet" required=""></textarea>
+                  <input type="submit" value="Soumettre">
+               </form>
+               <aside class="social__links">
+                  <a href="https://github.com/M2AML" target="_blank"><img src="./images/icon/github.svg" alt=""></a>
+                  <a href="https://t.me/M2A_ML" target="_blank"><img src="./images/icon/telegram.svg" alt=""></a>
+               </aside>
+            </article>
+         </article>
+      </section>
+   </main>
+   <script src="./app.js"></script>
+</body>
+
+</html>
